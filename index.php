@@ -16,7 +16,7 @@ if (count($params) == 2) {
 //если в url передано меньше двух параметров
 elseif (count($params) < 2) {
     $routes = [
-        '/' => 'pages/main.php',
+        '' => 'pages/main.php',
         'about' => 'pages/about.php',
     ];
     if (isset($routes[$request_url])) require_once $routes[$request_url];
