@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap");
 .okeyPost {
   font-family: "Montserrat", sans-serif;
+  background: #E5E5E5;
 }
 
 .header {
@@ -25,6 +26,7 @@
   padding: 0.9375rem 1.8125rem;
   display: inline-block;
   box-sizing: border-box;
+  transition: 0.6s all;
 }
 .header .nav.active {
   position: absolute;
@@ -52,6 +54,7 @@
 }
 
 .order {
+  transition: 0.6s all;
   padding: 0 2.5rem;
 }
 .order .order-info-block {
@@ -76,6 +79,7 @@
   color: #ffffffac;
 }
 .order .order-info-block_content button {
+  cursor: pointer;
   color: #FFFFFF;
   background: linear-gradient(90deg, #00C97B 0%, #00D981 96.96%);
   box-shadow: 0rem 0.25rem 0.25rem rgba(1, 203, 124, 0.2);
@@ -83,6 +87,9 @@
   padding: 0.9375rem 1.8125rem;
   display: inline-block;
   box-sizing: border-box;
+  border: none;
+  margin-top: 2.1875rem;
+  transition: 0.6s all;
 }
 .order .order-info-block_img {
   padding: 1.875rem;
@@ -92,13 +99,173 @@
   width: 100%;
 }
 
-@media screen and (max-width: 40.3125rem) {
+.icons-block {
+  display: flex;
+  max-width: 62.5rem;
+  margin: 6.25rem auto;
+  box-shadow: 0px 0px 4.375rem rgba(138, 138, 138, 0.1);
+  border-radius: 1rem;
+  background: #FFF;
+}
+.icons-block .icons-block-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem;
+}
+.icons-block .icons-block-info img {
+  max-width: 50%;
+}
+.icons-block .icons-block-info h2 {
+  max-width: 70%;
+  color: #1F2428;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.tryIt {
+  padding: 6.25rem 3.75rem;
+}
+.tryIt .tryIt-block {
+  padding: 1.5625rem;
+  background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
+  border-radius: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tryIt .tryIt-block_img {
+  max-width: 40%;
+}
+.tryIt .tryIt-block_img img {
+  width: 100%;
+}
+.tryIt .tryIt-block_content {
+  max-width: 55%;
+}
+.tryIt .tryIt-block_content h1 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  color: #FFF;
+}
+.tryIt .tryIt-block_content p {
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #ffffff90;
+}
+.tryIt .tryIt-block_content button {
+  cursor: pointer;
+  color: #FFFFFF;
+  background: linear-gradient(90deg, #00C97B 0%, #00D981 96.96%);
+  box-shadow: 0rem 0.25rem 0.25rem rgba(1, 203, 124, 0.2);
+  border-radius: 2.25rem;
+  padding: 0.9375rem 1.8125rem;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+}
+
+@media screen and (max-width: 45rem) {
   .nav {
     display: none;
   }
 
   .hamburger {
     display: block;
+  }
+
+  .order .order-info-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .order .order-info-block_content {
+    max-width: 100%;
+  }
+  .order .order-info-block_content h1 {
+    font-size: 2.1875rem;
+    font-weight: 600;
+  }
+  .order .order-info-block_img {
+    max-width: 50%;
+  }
+  .order .order-info-block_img img {
+    width: 100%;
+  }
+
+  .icons-block {
+    margin: 3.125rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tryIt {
+    padding: 6.25rem 3.75rem;
+  }
+  .tryIt .tryIt-block {
+    padding: 1.5625rem;
+    background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
+    border-radius: 2.25rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .tryIt .tryIt-block_img {
+    max-width: 100%;
+  }
+  .tryIt .tryIt-block_img img {
+    width: 100%;
+  }
+  .tryIt .tryIt-block_content {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 28.125rem) {
+  .order .order-info-block {
+    display: flex;
+    flex-direction: column;
+  }
+  .order .order-info-block_content {
+    max-width: 100%;
+  }
+  .order .order-info-block_content h1 {
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+  .order .order-info-block_content p {
+    font-size: 0.75rem;
+    font-weight: 300;
+  }
+  .order .order-info-block_img {
+    max-width: 50%;
+  }
+  .order .order-info-block_img img {
+    width: 100%;
+  }
+
+  .tryIt {
+    padding: 3.125rem 1.875rem;
+  }
+  .tryIt .tryIt-block {
+    background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
+    border-radius: 2.25rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .tryIt .tryIt-block_img {
+    max-width: 100%;
+  }
+  .tryIt .tryIt-block_img img {
+    width: 100%;
+  }
+  .tryIt .tryIt-block_content {
+    max-width: 100%;
+  }
+  .tryIt .tryIt-block_content h1 {
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+  .tryIt .tryIt-block_content p {
+    font-size: 0.75rem;
+    font-weight: 300;
   }
 }
 * {

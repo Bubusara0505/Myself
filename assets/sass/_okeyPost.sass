@@ -1,5 +1,6 @@
 .okeyPost
   font-family: 'Montserrat', sans-serif
+  background: #E5E5E5
 
 .header
   display: flex
@@ -21,6 +22,8 @@
     padding: .9375rem 1.8125rem
     display: inline-block
     box-sizing: border-box
+    transition: .6s all
+
 
   .nav.active
     position: absolute
@@ -44,6 +47,7 @@
   position: relative
 
 .order
+  transition: .6s all
   padding: 0 2.5rem
   .order-info-block
     display: flex
@@ -63,6 +67,7 @@
         font-weight: 300
         color: #ffffffac
       button
+        cursor: pointer
         color: #FFFFFF
         background:  linear-gradient(90deg, #00C97B 0%, #00D981 96.96%)
         box-shadow: 0rem .25rem .25rem rgba(1, 203, 124, 0.2)
@@ -70,6 +75,9 @@
         padding: .9375rem 1.8125rem
         display: inline-block
         box-sizing: border-box
+        border: none
+        margin-top: 2.1875rem
+        transition: .6s all
     &_img
       padding: 1.875rem
       max-width: 35%
@@ -77,15 +85,133 @@
         width: 100%
 
 
+.icons-block
+  display: flex
+  max-width: 62.5rem
+  margin: 6.25rem auto
+  box-shadow: 0px 0px 4.375rem rgba(138, 138, 138, 0.1)
+  border-radius: 1rem
+  background: #FFF
+  .icons-block-info
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 1.25rem
+    img
+      max-width: 50%
+    h2
+      max-width: 70%
+      color: #1F2428
+      font-weight: 700
+      font-size: 1.125rem
 
+.tryIt
+  padding: 6.25rem 3.75rem
+  .tryIt-block
+    padding: 1.5625rem
+    background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%)
+    border-radius: 2.25rem
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &_img
+      max-width: 40%
+      img
+        width: 100%
+    &_content
+      max-width: 55%
+      h1
+        font-weight: 700
+        font-size: 1.875rem
+        color: #FFF
+      p
+        font-weight: 400
+        font-size: 1.125rem
+        color: #ffffff90
+      button
+        cursor: pointer
+        color: #FFFFFF
+        background:  linear-gradient(90deg, #00C97B 0%, #00D981 96.96%)
+        box-shadow: 0rem .25rem .25rem rgba(1, 203, 124, 0.2)
+        border-radius: 2.25rem
+        padding: .9375rem 1.8125rem
+        display: inline-block
+        box-sizing: border-box
+        border: none
 
-
-
-
-
-@media screen and(max-width: 40.3125rem)
+@media screen and(max-width: 45rem)
   .nav
     display: none
   .hamburger
     display: block
-  
+  .order
+    .order-info-block
+      display: flex
+      flex-direction: column
+      &_content
+        max-width: 100%
+        h1
+          font-size: 2.1875rem
+          font-weight: 600
+      &_img
+        max-width: 50%
+        img
+          width: 100%
+  .icons-block
+    margin: 3.125rem 1.25rem
+    display: flex
+    flex-direction: column
+
+
+  .tryIt
+    padding: 6.25rem 3.75rem
+    .tryIt-block
+      padding: 1.5625rem
+      background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%)
+      border-radius: 2.25rem
+      display: flex
+      flex-direction: column
+      &_img
+        max-width: 100%
+        img
+          width: 100%
+      &_content
+        max-width: 100%
+
+
+@media screen and(max-width: 28.125rem)
+  .order
+    .order-info-block
+      display: flex
+      flex-direction: column
+      &_content
+        max-width: 100%
+        h1
+          font-size: 1.25rem
+          font-weight: 400
+        p
+          font-size: .75rem
+          font-weight: 300
+      &_img
+        max-width: 50%
+        img
+          width: 100%
+  .tryIt
+    padding: 3.125rem 1.875rem
+    .tryIt-block
+      background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%)
+      border-radius: 2.25rem
+      display: flex
+      flex-direction: column
+      &_img
+        max-width: 100%
+        img
+          width: 100%
+      &_content
+        max-width: 100%
+        h1
+          font-size: 1.25rem
+          font-weight: 400
+        p
+          font-size: .75rem
+          font-weight: 300

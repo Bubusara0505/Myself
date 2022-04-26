@@ -35,6 +35,36 @@ $titil = "Home";?>
         </div>
       </div>
     </div>
+    <div class="icons-block">
+      <div class="icons-block-info">
+        <img src="./assets/img/okeypost/icons/Иконка1.svg" alt="">
+        <h2>Экономия до 70%</h2>
+      </div>
+      <div class="icons-block-info">
+        <img src="./assets/img/okeypost/icons/Иконка2.svg" alt="">
+        <h2>Только подлинная продукция</h2>
+      </div>
+      <div class="icons-block-info">
+        <img src="./assets/img/okeypost/icons/Иконка3.svg" alt="">
+        <h2>Оперативная доставка</h2>
+      </div>
+      <div class="icons-block-info">
+        <img src="./assets/img/okeypost/icons/Иконка4.svg" alt="">
+        <h2>Огромный выбор товаров</h2>
+      </div>
+    </div>
+    <div class="tryIt">
+      <div class="tryIt-block">
+        <div class="tryIt-block_img">
+          <img src="./assets/img/okeypost/Иллюстрация2.png" alt="">
+        </div>
+        <div class="tryIt-block_content">
+          <h1>Поручите нашим мастерам шопинга оформить заказы в английских магазинах и освободите время для более важных дел.</h1>
+          <p>Такой способ покупки также подойдёт, если магазин принимает только английские карты.</p>
+          <button>Попробовать</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 
