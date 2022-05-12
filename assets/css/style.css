@@ -174,18 +174,22 @@
 .simple-block_cards {
   margin-top: 0.875rem;
   display: grid;
-  grid-template-columns: repeat(4, 15rem);
-  grid-gap: 4.375rem;
+  grid-template-columns: repeat(4, 12.5rem);
+  grid-gap: 10%;
 }
-.simple-block_cards img {
+.simple-block_card {
+  display: inline-block;
+  box-sizing: border-box;
+}
+.simple-block_card img {
   border-radius: 2.1875rem;
 }
-.simple-block_cards h1 {
+.simple-block_card h1 {
   color: #1F2428;
   font-weight: 700;
   font-size: 1.25rem;
 }
-.simple-block_cards p {
+.simple-block_card p {
   color: #1F2428;
   font-weight: 300;
   font-size: 1rem;
