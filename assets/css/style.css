@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap");
 .wrapper {
   font-family: "Montserrat", sans-serif;
-  background: #e5e5e572;
+  background: #E5E5E5;
 }
 
 .header {
@@ -257,6 +257,94 @@
   border: none;
 }
 
+.customer-top h1 {
+  color: #1F2428;
+  font-weight: 800;
+  font-size: 2.0625rem;
+  max-width: 52.125rem;
+  margin-bottom: 1.25rem;
+}
+.customer-top p {
+  color: #1F2428;
+  font-weight: 300;
+  font-size: 1.25rem;
+  max-width: 37.75rem;
+}
+.customer-bottom {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 21.875rem);
+  grid-gap: 2.5rem;
+}
+.customer-card {
+  color: #1F2428;
+  padding: 1.5625rem;
+  background: #FFF;
+  box-shadow: 0rem 0rem 4.375rem rgba(138, 138, 138, 0.1);
+  border-radius: 1rem;
+}
+.customer-card h1 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 0.625rem;
+  margin-top: 1.875rem;
+}
+.customer-card p {
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+
+.comment {
+  padding-top: 3.75rem;
+}
+.comment-cards {
+  display: grid;
+  grid-gap: 1.875rem;
+  grid-template-columns: repeat(2, 37.5rem);
+}
+.comment-card {
+  background: #FFF;
+  box-shadow: 0px 0px 4.375rem rgba(138, 138, 138, 0.1);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  color: #1F2428;
+}
+.comment-card_top {
+  margin-left: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+.comment-card_top h1 {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+.comment-card_top p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+.comment-card_bottom {
+  margin-left: 1.25rem;
+}
+.comment-card_bottom h1 {
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+.comment-card_bottom span {
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+.comment-card_star {
+  color: #FFA009;
+  margin-top: 0.875rem;
+  margin-bottom: 0.875rem;
+}
+.comment-card_img {
+  max-width: 15rem;
+}
+.comment-card_img img {
+  width: 100%;
+}
+
 @media screen and (max-width: 81.25rem) {
   .order .order-info-block {
     display: flex;
@@ -293,6 +381,14 @@
     display: grid;
     grid-template-columns: repeat(2, 15rem);
     grid-gap: 3.125rem;
+  }
+}
+@media screen and (max-width: 70.625rem) {
+  .customer-bottom {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 12.5rem);
+    grid-gap: 2.5rem;
   }
 }
 @media screen and (max-width: 51.25rem) {
@@ -350,6 +446,13 @@
   }
   .tryIt .tryIt-block_content {
     max-width: 100%;
+  }
+
+  .customer-bottom {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 12.5rem);
+    grid-gap: 2.5rem;
   }
 }
 @media screen and (max-width: 28.125rem) {
@@ -472,6 +575,13 @@
   .virtual-content p {
     font-weight: 300;
     font-size: 0.875rem;
+  }
+
+  .customer-bottom {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(1, 12.5rem);
+    grid-gap: 2.5rem;
   }
 }
 * {

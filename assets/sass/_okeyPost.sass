@@ -1,6 +1,6 @@
 .wrapper
   font-family: 'Montserrat', sans-serif
-  background: #e5e5e572
+  background:  #E5E5E5
 
 .header
   display: flex
@@ -219,51 +219,79 @@
         border: none
 
 
+.customer
+  &-top
+    h1
+      color: #1F2428
+      font-weight: 800
+      font-size: 2.0625rem
+      max-width: 52.125rem
+      margin-bottom: 1.25rem
+    p
+      color: #1F2428
+      font-weight: 300
+      font-size: 1.25rem
+      max-width: 37.75rem
+  &-bottom
+    margin-top: 2.5rem
+    display: grid
+    grid-template-columns: repeat(4, 21.875rem)
+    grid-gap: 2.5rem
+  &-card
+    color: #1F2428
+    padding: 1.5625rem
+    background: #FFF
+    box-shadow: 0rem 0rem 4.375rem rgba(138, 138, 138, 0.1)
+    border-radius: 1rem
+    h1
+      font-weight: 700
+      font-size: 1.125rem
+      margin-bottom: .625rem
+      margin-top: 1.875rem
+    p
+      font-weight: 300
+      font-size: .875rem
 
 
 
-
-
-
-
-// .comment
-//   &-cards
-//     display: grid
-//     grid-gap: 1.875rem
-//     grid-template-columns: repeat(2, 37.5rem)
-//   &-card
-//     display: flex
-//     align-items: center
-//     color: #1F2428
-//     &_top
-//       margin-left: 1.25rem
-//       margin-bottom: 1.25rem
-//       h1
-//         font-weight: 700
-//         font-size: 1.125rem
-//       p
-//         font-weight: 300
-//         font-size: 1rem
-//     &_bottom
-//       margin-left: 1.25rem
-//       h1
-//         font-weight: 700
-//         font-size: .875rem
-//       span
-//         font-weight: 300
-//         font-size: .875rem
-//     &_star
-//       color: #FFA009
-//       margin-top: .875rem
-//       margin-bottom: .875rem
-//     &_img
-//       max-width: 15rem
-//       img
-//         width: 100%
-
-
-
-
+.comment
+  padding-top: 3.75rem
+  &-cards
+    display: grid
+    grid-gap: 1.875rem
+    grid-template-columns: repeat(2, 37.5rem)
+  &-card
+    background: #FFF
+    box-shadow: 0px 0px 4.375rem rgba(138, 138, 138, 0.1)
+    border-radius: 1rem
+    display: flex
+    align-items: center
+    color: #1F2428
+    &_top
+      margin-left: 1.25rem
+      margin-bottom: 1.25rem
+      h1
+        font-weight: 700
+        font-size: 1.125rem
+      p
+        font-weight: 300
+        font-size: 1rem
+    &_bottom
+      margin-left: 1.25rem
+      h1
+        font-weight: 700
+        font-size: .875rem
+      span
+        font-weight: 300
+        font-size: .875rem
+    &_star
+      color: #FFA009
+      margin-top: .875rem
+      margin-bottom: .875rem
+    &_img
+      max-width: 15rem
+      img
+        width: 100%
 
 
 @media screen and(max-width: 81.25rem) 
@@ -296,6 +324,18 @@
         display: grid
         grid-template-columns: repeat(2, 15rem)
         grid-gap: 3.125rem
+
+
+@media screen and(max-width: 70.625rem)
+  .customer
+    &-bottom
+      margin-top: 2.5rem
+      display: grid
+      grid-template-columns: repeat(4, 12.5rem)
+      grid-gap: 2.5rem
+
+
+
 
 
 @media screen and(max-width: 51.25rem)
@@ -331,9 +371,6 @@
     display: none
   .hamburger
     display: block
-  
-
-
   .tryIt
     padding: 6.25rem 3.75rem
     .tryIt-block
@@ -348,7 +385,12 @@
           width: 100%
       &_content
         max-width: 100%
-  
+  .customer
+      &-bottom
+        margin-top: 2.5rem
+        display: grid
+        grid-template-columns: repeat(2, 12.5rem)
+        grid-gap: 2.5rem
 
 @media screen and(max-width: 28.125rem)
   .order
@@ -444,3 +486,9 @@
       p
         font-weight: 300
         font-size: .875rem
+  .customer
+    &-bottom
+      margin-top: 2.5rem
+      display: grid
+      grid-template-columns: repeat(1, 12.5rem)
+      grid-gap: 2.5rem

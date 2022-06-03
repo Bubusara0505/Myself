@@ -1,4 +1,4 @@
-    <!-- <div class="comment contaner">
+    <div class="comment contaner">
       <h1 class="comment_title">Отзывы и цитаты блогеров:</h1>
       <div class="comment-cards">
         <div class="comment-card">
@@ -93,4 +93,4 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
