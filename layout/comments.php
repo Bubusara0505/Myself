@@ -93,4 +93,7 @@
           </div>
         </div>
       </div>
+      <div class="comment-btn">
+        <button>Все отзывы</button>
+      </div>
     </div>
