@@ -1,4 +1,4 @@
-<div class="virtual">
+<div class="virtual ">
   <div class="virtual-items">
     <div class="virtual-img">
         <img src="./assets/img/okeypost/virtual.png" alt="">
