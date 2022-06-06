@@ -404,6 +404,17 @@
   border: none;
   color: #FFF;
 }
+.sub-block button {
+  cursor: pointer;
+  color: #FFFFFF;
+  background: linear-gradient(90deg, #00C97B 0%, #00D981 96.96%);
+  box-shadow: 0rem 0.25rem 0.25rem rgba(1, 203, 124, 0.2);
+  border-radius: 2.25rem;
+  padding: 0.9375rem 1.8125rem;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+}
 
 @media screen and (max-width: 81.25rem) {
   .order .order-info-block {
@@ -475,6 +486,9 @@
   .comment {
     padding-top: 3.75rem;
   }
+  .comment_title {
+    padding: 0.9375rem;
+  }
   .comment-cards {
     display: grid;
     grid-gap: 1.875rem;
@@ -493,6 +507,10 @@
     margin-bottom: 1.25rem;
   }
 }
+.adress {
+  padding: 0.9375rem;
+}
+
 @media screen and (max-width: 51.25rem) {
   .icons-block {
     margin: 3.125rem 1.25rem;
@@ -568,7 +586,10 @@
     max-width: 100%;
   }
 
-  .customer-bottom {
+  .customer-top {
+    padding: 0.9375rem;
+  }
+  .customer-top-bottom {
     margin-top: 2.5rem;
     display: grid;
     grid-template-columns: repeat(2, 12.5rem);
@@ -582,6 +603,7 @@
     display: grid;
     grid-gap: 1.875rem;
     grid-template-columns: repeat(1, 15.625rem);
+    justify-content: center;
   }
   .comment-card {
     background: #FFF;
@@ -594,6 +616,10 @@
   .comment-card_top {
     margin-left: 1.25rem;
     margin-bottom: 1.25rem;
+  }
+  .comment-btn {
+    text-align: center;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 28.125rem) {
@@ -723,6 +749,7 @@
     display: grid;
     grid-template-columns: repeat(1, 12.5rem);
     grid-gap: 2.5rem;
+    justify-content: center;
   }
 }
 * {

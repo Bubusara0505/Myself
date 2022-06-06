@@ -17,7 +17,7 @@ $titil = "Home";?>
     include "./layout/customer.php";
     include "./layout/comments.php";
     include "./layout/adress.php";
-    include "./layout/sub.php";
+    // include "./layout/sub.php";
     ?>
   </div>
 </div>
