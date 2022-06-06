@@ -366,6 +366,7 @@
   flex-direction: column;
   color: #1F2428;
   padding-top: 9.375rem;
+  padding-bottom: 9.375rem;
 }
 .adress-title {
   margin-bottom: 0.75rem;
@@ -381,6 +382,27 @@
   padding: 3.75rem;
   background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
   border-radius: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sub-info {
+  color: #FFF;
+  max-width: 30%;
+}
+.sub-block {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sub-block-input {
+  color: #FFF;
+}
+.sub-block-input input {
+  background: transparent;
+  border: none;
+  color: #FFF;
 }
 
 @media screen and (max-width: 81.25rem) {

@@ -2,12 +2,12 @@
   <div class="sub-info">
     <h3>Подпишитеть и будьте в курсе всех скидок и акций магазинов Великобритании!</h3>
   </div>
-  <div class="">
-    <div class="sub-input">
+  <div class="sub-block">
+    <div class="sub-block-input">
       <ion-icon name="mail-open-outline"></ion-icon>
-      <input type="text">
+      <input type="text" placeholder="Введите ваш email">
     </div>
-    <div class="sub-button">
+    <div class="sub-block-button">
       <button>Подписаться</button>
     </div>
   </div>
