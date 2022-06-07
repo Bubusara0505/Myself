@@ -4,7 +4,7 @@
   </div>
   <div class="sub-block">
     <div class="sub-block-input">
-      <ion-icon name="mail-open-outline"></ion-icon>
+      <ion-icon class="sub-block-icon" name="mail-open-outline"></ion-icon>
       <input type="text" placeholder="Введите ваш email">
     </div>
     <div class="sub-block-button">

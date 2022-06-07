@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap");
 .wrapper {
   font-family: "Montserrat", sans-serif;
-  background: #E5E5E5;
+  background: #e5e5e53f;
 }
 
 .header {
@@ -382,6 +382,7 @@
   padding: 3.75rem;
   background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
   border-radius: 2.25rem;
+  margin-top: 9.375rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -396,12 +397,25 @@
   align-items: center;
   justify-content: space-between;
 }
+.sub-block-icon {
+  font-size: 1.625rem;
+  position: absolute;
+  top: 1.3125rem;
+  left: 0.4375rem;
+}
 .sub-block-input {
   color: #FFF;
+  position: relative;
 }
 .sub-block-input input {
   background: transparent;
   border: none;
+  color: #FFF;
+  border-bottom: 1px solid #FFF;
+  padding: 1.65rem;
+  text-align: center;
+}
+.sub-block-input input::placeholder {
   color: #FFF;
 }
 .sub-block button {
@@ -452,6 +466,7 @@
     display: grid;
     grid-template-columns: repeat(2, 15rem);
     grid-gap: 3.125rem;
+    justify-content: center;
   }
 
   .comment {
@@ -478,6 +493,7 @@
 @media screen and (max-width: 70.625rem) {
   .customer-bottom {
     margin-top: 2.5rem;
+    padding: 1.25rem;
     display: grid;
     grid-template-columns: repeat(4, 12.5rem);
     grid-gap: 2.5rem;
