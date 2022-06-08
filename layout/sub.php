@@ -1,4 +1,4 @@
-<div class="sub contaner">
+<div class="sub ">
   <div class="sub-info">
     <h3>Подпишитеть и будьте в курсе всех скидок и акций магазинов Великобритании!</h3>
   </div>
