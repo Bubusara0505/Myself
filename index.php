@@ -18,6 +18,7 @@ elseif (count($params) < 2) {
     $routes = [
         '' => 'pages/main.php',
         'about' => 'pages/about.php',
+        'add-user' => 'pages/add-user.php',
     ];
     if (isset($routes[$request_url])) require_once $routes[$request_url];
     else require_once ('pages/404.php');
