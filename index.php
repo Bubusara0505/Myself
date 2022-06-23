@@ -1,3 +1,9 @@
+<?
+
+    session_start();
+    ob_start();
+
+?>
 <?php
 //url
 $request_url = rtrim(ltrim(urldecode(parse_url($_SERVER['REQUEST_URI'],5)), '/'), '/');
@@ -19,9 +25,12 @@ elseif (count($params) < 2) {
         '' => 'pages/main.php',
         'about' => 'pages/about.php',
         'add-user' => 'pages/add-user.php',
+        'auth' => 'pages/auth.php',
     ];
     if (isset($routes[$request_url])) require_once $routes[$request_url];
     else require_once ('pages/404.php');
 }
 
 else require_once ('pages/404.php');
+
+    ob_flush();

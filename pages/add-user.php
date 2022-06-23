@@ -1,10 +1,35 @@
 <?php
-  include "./layout/head.php";
+
+
   include "./include/config.php";
+
   include "./include/function.php";
+
+  if (isset($_POST['create'])) {
+
+    $name = clear_field($_POST['name']);
+    $username = clear_field($_POST['username']);
+    $email = clear_field($_POST['email']);
+    $password = clear_field($_POST['password']);
+    $hash_password = password_hash($password, PASSWORD_DEFAULT);
+    $role = (int) $_POST['role'];
+
+    $cols = " (`name`,`username`, `email` , `password`, `role`)";
+
+    $values = "('$name','$username', '$email', '$hash_password', '$role')";
+
+    create_user_in_db('users', $cols, $values);
+
+    
+  }
+
 ?>
 
 <div class="wrapper">
+<?
+  include "./layout/head.php";
+  include "./layout/header.php";?>
+
   <div class="add-user contaner">
     <form action="<?= $_SERVER['REQUEST_URI']?>" method="post" enctype="multipart/form-data">
       <div class="add-user_block">
