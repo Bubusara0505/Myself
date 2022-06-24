@@ -2,7 +2,7 @@
 include "./layout/head.php";
 include "./include/config.php";
 include "./include/function.php";
-$title = "Главная"; ?>
+?>
 
 
 

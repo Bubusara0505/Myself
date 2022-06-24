@@ -3,7 +3,7 @@ include "./layout/head.php";
 include "./include/config.php";
 include "./include/function.php";
 
-$titil = "Home";?>
+$title = "О нас";?>
 
 
 

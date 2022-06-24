@@ -2,6 +2,7 @@
 require_once "./include/config.php";
 require_once "./include/function.php";
 
+$title = "аоаоо";
 if (isset($_GET['logout'])) {
   session_destroy();
   redirect_to("/");

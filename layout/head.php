@@ -1,3 +1,7 @@
+<?
+  $title = "Главная";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +10,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/hamburgers.min.css">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title><? $title=""; ?></title>
+  
+  <title><?= $title ?></title>
 </head>
 <body>
   
