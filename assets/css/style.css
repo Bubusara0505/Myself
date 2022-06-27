@@ -468,6 +468,16 @@
   display: inline-block;
 }
 
+.Autorization {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Autorization .Auth-block {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (max-width: 81.25rem) {
   .order .order-info-block {
     display: flex;

@@ -28,6 +28,7 @@ elseif (count($params) < 2) {
         '' => 'pages/main.php',
         'about' => 'pages/about.php',
         'add-user' => 'pages/add-user.php',
+        'add-post' => 'pages/add-post.php',
         'auth' => 'pages/auth.php',
         'info' => 'pages/info.php',
         'registr' => 'pages/registr.php',

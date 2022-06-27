@@ -10,6 +10,7 @@ if (isset($_GET['logout'])) {
 
 if (isset($_POST['auth'])) {
   $login = clear_field($_POST['name']);
+
   $password = clear_field($_POST['password']);
 
   $users = select_all_users('users');
@@ -26,18 +27,14 @@ if (isset($_POST['auth'])) {
       }
     }
   }
-
 }
-
 ?>
 
 
 
 <div class="wrapper">
-  
   <?include "./layout/header.php";
-  include "./layout/head.php";
-  ?>
+  include "./layout/head.php";?>
 
   <?if (!isset($_SESSION['is_auth'])) : ?>
 <div class="Autorization contaner">
@@ -57,7 +54,6 @@ if (isset($_POST['auth'])) {
             <button type="submit" name="auth">Войти</button>
           </div>
         </div>
-
     </form>
   </div>
 </div>

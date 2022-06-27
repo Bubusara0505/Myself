@@ -24,20 +24,16 @@ $title = "Добавить пользователя";
     
   }
 
+  if (!isset($_SESSION['is_auth'])) {
+    redirect_to("/");
+  }
+
 ?>
 
 <div class="wrapper">
 <?
   include "./layout/head.php";
   include "./layout/header.php";?>
-
-<div class="delite-user">
-    <form action="<?= $_SERVER['REQUEST_URI']?>" method="get">
-      <p>Имя человека которого нужно удалить</p>
-      <input type="text" name="name">
-      <button name="delite">Удалить</button>
-    </form>
-  </div>
 
   <div class="add-user contaner">
     <form action="<?= $_SERVER['REQUEST_URI']?>" method="post" enctype="multipart/form-data">
@@ -71,21 +67,7 @@ $title = "Добавить пользователя";
       </div>
     </form>
   </div>
-
-
 </div>
 
-
-<?
-include "./layout/foot.php";
-
-?>
-
-<?
-// "DELETE FROM `users` WHERE `users`.`id` = 17"
-  if (isset($_GET['delite'])) {
-    $name = $_SESSION['name'];
-
-    $query = "DELETE FROM `users` ORDER BY `name` = $name";
-    $result = mysqli_query($connect, $query);
-  }
+<?php
+  include "./layout/foot.php";

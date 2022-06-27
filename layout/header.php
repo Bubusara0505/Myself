@@ -11,7 +11,7 @@
 
     <a class="nav-link" href="profile">Профиль</a>
     <a class="nav-link" href="add-user">Добавить пользователя</a>
-    <a class="nav-link" href="add-user">Добавить пост</a>
+    <a class="nav-link" href="add-post">Добавить пост</a>
 
       <?php else: ?>
     <a class="nav-link" href="registr">Регистрация</a>

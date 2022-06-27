@@ -4,6 +4,9 @@ include "./include/config.php";
 include "./include/function.php";
 $title = "Главная"; 
 
+  if (!isset($_SESSION['is_auth'])) {
+    redirect_to("/");
+  }
 
 if (isset($_GET['logout'])) {
   session_destroy();
